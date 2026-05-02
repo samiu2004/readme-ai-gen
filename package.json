@@ -1,0 +1,28 @@
+{
+  "name": "readme-ai-gen",
+  "version": "1.0.0",
+  "description": "⚡ Auto-generate beautiful README files for any project using AI, one command, done.",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "readme-ai-gen": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "readme",
+    "ai",
+    "generator",
+    "cli",
+    "anthropic",
+    "documentation"
+  ],
+  "author": "samiu2004",
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "@google/generative-ai": "^0.24.1",
+    "chalk": "^5.4.1"
+  }
+}
