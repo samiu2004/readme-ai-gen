@@ -1,6 +1,6 @@
 {
   "name": "readme-ai-gen-cli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "⚡ Auto-generate beautiful README files for any project using AI, one command, done.",
   "main": "index.js",
   "type": "module",

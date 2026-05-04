@@ -22,10 +22,30 @@ async function scanProject(projectPath) {
 }
 
 async function generateReadme(projectInfo) {
-  const prompt = `You are a technical writer. Generate a beautiful complete README.md for this project.
+  const prompt = `You are a senior developer and technical writer at a top tech company. Generate a stunning, professional README.md for this project that would impress any developer on GitHub.
+
 Project files: ${projectInfo.files.join(", ")}
 Package.json: ${projectInfo.packageJson ? JSON.stringify(projectInfo.packageJson, null, 2) : "Not found"}
-Include: title with emoji, badges, description, features, installation, usage, contributing, license.`;
+
+Include these sections in this order:
+1. A big title with a relevant emoji
+2. Badges for version, license, npm downloads
+3. A one-line powerful description
+4. A "Why use this?" section with 3 bullet points
+5. Features section with emojis for each feature
+6. Prerequisites section
+7. Installation with code blocks
+8. Usage with clear code examples
+9. Configuration section if relevant
+10. Contributing guide
+11. License
+
+Rules:
+- Use emojis generously throughout
+- Make descriptions exciting and professional
+- Use proper markdown tables where relevant
+- Add a demo section placeholder with a GIF placeholder
+- Make it look like a top GitHub project`;
 
   const completion = await client.chat.completions.create({
     messages: [{ role: "user", content: prompt }],
