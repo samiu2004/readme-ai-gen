@@ -1,6 +1,6 @@
 {
-  "name": "readme-ai-gen",
-  "version": "1.0.0",
+  "name": "readme-ai-gen-cli",
+  "version": "1.0.1",
   "description": "⚡ Auto-generate beautiful README files for any project using AI, one command, done.",
   "main": "index.js",
   "type": "module",
@@ -22,8 +22,7 @@
   "license": "MIT",
   "files": ["index.js", "README.md", "LICENSE"],
   "dependencies": {
-    "@anthropic-ai/sdk": "^0.39.0",
-    "@google/generative-ai": "^0.24.1",
+    "groq-sdk": "^0.9.0",
     "chalk": "^5.4.1"
   }
 }
